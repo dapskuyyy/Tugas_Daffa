@@ -1,0 +1,83 @@
+.search-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box input {
+  width: 60%;
+  max-width: 280px;
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  font-family: inherit;
+}
+
+.search-box input:focus {
+  border-color: #0095f6;
+}
+
+/* 🔍 SEARCH BAR INSTAGRAM STYLE */
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 200px;
+    transition: .2s;
+}
+
+.search-input:focus {
+    width: 280px;
+    border-color: #0095f6;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0,149,246,0.3);
+}
+
+/* 🔽 HASIL DROP-DOWN */
+.search-results {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    display: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 999;
+}
+
+.search-item {
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.search-item:hover {
+    background: #f3f3f3;
+}
+
+.search-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.search-item span {
+    font-size: 14px;
+    color: #333;
+}
+
